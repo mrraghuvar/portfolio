@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["system-ui", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
       },
       colors: {
         primary: "#2563eb", // blue-600

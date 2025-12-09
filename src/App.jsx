@@ -70,7 +70,7 @@ function Header() {
             <span className="text-sm font-semibold tracking-tight">
               Raghuvar Jha
             </span>
-            <span className="text-[11px] text-slate-400">
+            <span className="font-outfit text-[11px] text-slate-400">
               Freelance MERN Developer
             </span>
           </div>
@@ -93,7 +93,7 @@ function Header() {
         <div className="hidden md:flex items-center gap-3">
 
           <a
-            href="#contact"
+            href="tel:+91-9319436943"
             className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-400 to-sky-500 px-4 py-1.5 text-xs font-semibold text-slate-950 shadow-[0_10px_35px_rgba(56,120,148,0.75)] hover:brightness-105 transition"
           >
             Book a Free call
@@ -144,7 +144,7 @@ function Header() {
                 View packages
               </a>
               <a
-                href="#contact"
+                href="tel:+91-9319436943"
                 className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-400 to-sky-500 px-3 py-1.5 text-[11px] font-semibold text-slate-950"
                 onClick={() => setOpen(false)}
               >
@@ -178,7 +178,7 @@ function Hero() {
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-slate-800/80 bg-slate-900/60 px-3 py-1 text-[11px] text-slate-300 mb-4">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-          <span>Open For Freelance Projects · 3–5 Day Delivery</span>
+          <span className="font-outfit text-sm">Open For Freelance Projects  3–5 Day Delivery</span>
         </div>
 
         <p className="text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan-300/90">
@@ -195,7 +195,7 @@ function Hero() {
           </span>
           .
         </h1>
-        <p className="mt-4 text-sm sm:text-base text-slate-300/90 max-w-xl">
+        <p className="font-outfit text-lg mt-4  sm:text-base text-slate-300/90 max-w-xl">
           I build conversion-focused websites for restaurants, gyms, coaching
           centres and local businesses.
         </p>
@@ -205,18 +205,12 @@ function Hero() {
           <motion.a
             whileHover={{ scale: 1.04, y: -1 }}
             whileTap={{ scale: 0.97 }}
-            href="#contact"
+            href="tel:91-9319436943"
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-400 to-sky-500 px-7 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_10px_35px_rgba(56,120,148,0.75)]"
           >
-            Book a free 20-min call
+            Book a Free 20-min Call
           </motion.a>
-          <motion.a
-            whileHover={{ y: -1 }}
-            href="#work"
-            className="inline-flex items-center justify-center rounded-full border border-slate-700/80 bg-slate-900/70 px-6 py-2.5 text-sm font-medium text-slate-200 hover:border-cyan-400/80 hover:text-cyan-300 transition"
-          >
-            View demos
-          </motion.a>
+         
           <p className="text-[11px] text-slate-400 w-full sm:w-auto">
             <span className="text-emerald-400">No obligation.</span> Just ideas
             for your business.
@@ -232,7 +226,7 @@ function Hero() {
           ].map((item) => (
             <div
               key={item}
-              className="inline-flex items-center rounded-full border border-slate-800/80 bg-slate-900/70 px-3 py-1"
+              className=" font-outfit text-sm inline-flex items-center rounded-full border border-slate-800/80 bg-slate-900/70 px-3 py-1"
             >
               {item}
             </div>
@@ -260,7 +254,7 @@ function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
               <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
             </div>
-            <span className="text-[11px] text-slate-400">Raghuvar.tech</span>
+            <span className="font-outfit text-[14px] text-slate-400">Tech Stacks</span>
           </div>
 
           {/* Avatar + summary */}
@@ -277,24 +271,25 @@ function Hero() {
           </div>
 
           {/* "Code" style info */}
-          <div className="rounded-2xl bg-slate-950/70 border border-slate-800/80 p-4 space-y-3 text-xs text-slate-300 backdrop-blur">
-            <CodeLine label="Stack" value="React · Next.js · Node.js · MongoDB" />
-            <CodeLine
-              label="Special"
-              value="Business Websites, Dashboards, Landing Pages"
-            />
-            <CodeLine label="Clients" value="Local Businesses & Early-stage Startups" />
-            <CodeLine
-              label="Focus"
-              value="Clean UI, Fast Performance, Smooth UX"
-            />
-          </div>
+      <div className="grid grid-cols-4 md:gap-6 bg-white/5 border border-slate-800/50 md:p-6 rounded-2xl backdrop-blur-lg">
+  <TechStack stackImage="./src/assets/react.svg" stackName="ReactJS"/>  
+  <TechStack stackImage="./src/assets/Node.png" stackName="NodeJS"/>
+  <TechStack stackImage="./src/assets/Express.png" stackName="ExpressJS"/>
+  <TechStack stackImage="./src/assets/Mongo.png" stackName="MongoDB"/>
+  <TechStack stackImage="./src/assets/js.png" stackName="JavaScript"/>
+  <TechStack stackImage="./src/assets/Git.png" stackName="Git"/>
+  <TechStack stackImage="./src/assets/Tailwind.png" stackName="Tailwind"/>
+  <TechStack stackImage="./src/assets/Redux.png" stackName="Redux"/>
+</div>
+
+
+
 
           {/* Stats */}
           <div className="mt-4 grid grid-cols-3 gap-3 text-center text-[11px]">
-            <StatCard value="3–5 days" label="Typical delivery" />
-            <StatCard value="100%" label="Responsive layouts" />
-            <StatCard value="SEO-ready" label="On-page basics" />
+            <StatCard value="3–5 Days" label="Typical Delivery" />
+            <StatCard value="100%" label="Responsive Layouts" />
+            <StatCard value="SEO-Ready" label="On-page basics" />
           </div>
         </div>
       </motion.div>
@@ -321,14 +316,23 @@ function TrustedBy() {
   );
 }
 
-function CodeLine({ label, value }) {
+
+
+
+function TechStack({stackImage,stackName}){
+
   return (
-    <div className="flex gap-2 items-center align-middle">
-      <span className="text-slate-400  font-bold min-w-[80px] uppercase p-1 rounded-lg items-center text-center hover:bg-white cursor-pointer bg-gradient-to-r from-cyan-900 via-sky-900 to-indigo-900">{label} {"-->"}</span>
-      <span className="text-slate-300">{value}</span>
-    </div>
-  );
+
+<div className="flex flex-col items-center justify-center border border-cyan-700 rounded-xl gap-2 p-4 shadow-lg">
+      <img src={stackImage} alt={stackName} className="h-10 w-10 object-contain"/>
+      <span className="font-outfit text-slate-400 text-sm">{stackName}</span>
+</div> 
+
+  )
+
 }
+
+
 
 function StatCard({ value, label }) {
   return (
@@ -453,7 +457,7 @@ function Work() {
       type: "Landing + Menu",
       desc: "Hero with offer, live menu preview, gallery and direct WhatsApp booking.",
       tag: "Restaurants",
-      comingSoon: true,
+      comingSoon: false,
     },
     {
       name: "Gym Website Demo",
@@ -482,9 +486,8 @@ function Work() {
       custom={0.1}
     >
       <SectionHeader
-        eyebrow="Portfolio"
-        title="Demo layouts for your niche"
-        desc="These are demo structures for the types of businesses I work with. I’ll customise colors, images, and content for your brand."
+        eyebrow="Portfolios"
+        title={""}
       />
       <div className="mt-8 grid gap-6 md:grid-cols-3">
         {projects.map((project, i) => (
