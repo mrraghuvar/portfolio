@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import ExpressIcon from "./assets/Express.png";
+import MongoIcon from "./assets/Mongo.png";
+import NodeIcon from "./assets/Node.png";
+import jsIcon from "./assets/js.png";
+import reactIcon from "./assets/react.svg";
+import reduxIcon from "./assets/Redux.png";
+import gitIcon from "./assets/Git.png";
+import tailwindIcon from "./assets/Tailwind.png";
 
 const navItems = [
   { href: "#hero", label: "Home" },
@@ -272,14 +280,14 @@ function Hero() {
 
           {/* "Code" style info */}
       <div className="grid grid-cols-4 md:gap-6 bg-white/5 border border-slate-800/50 md:p-6 rounded-2xl backdrop-blur-lg">
-  <TechStack stackImage="./src/assets/react.svg" stackName="ReactJS"/>  
-  <TechStack stackImage="./src/assets/Node.png" stackName="NodeJS"/>
-  <TechStack stackImage="./src/assets/Express.png" stackName="ExpressJS"/>
-  <TechStack stackImage="./src/assets/Mongo.png" stackName="MongoDB"/>
-  <TechStack stackImage="./src/assets/js.png" stackName="JavaScript"/>
-  <TechStack stackImage="./src/assets/Git.png" stackName="Git"/>
-  <TechStack stackImage="./src/assets/Tailwind.png" stackName="Tailwind"/>
-  <TechStack stackImage="./src/assets/Redux.png" stackName="Redux"/>
+  <TechStack stackImage={reactIcon} stackName="ReactJS"/>  
+  <TechStack stackImage={NodeIcon} stackName="NodeJS"/>
+  <TechStack stackImage={ExpressIcon} stackName="ExpressJS"/>
+  <TechStack stackImage={MongoIcon} stackName="MongoDB"/>
+  <TechStack stackImage={jsIcon}stackName="JavaScript"/>
+  <TechStack stackImage={gitIcon} stackName="Git"/>
+  <TechStack stackImage={tailwindIcon}stackName="Tailwind"/>
+  <TechStack stackImage={reduxIcon} stackName="Redux"/>
 </div>
 
 
